@@ -3,7 +3,12 @@ const { Post, User, Comment } = require('../models');
 // TODO: Import the custom middleware
 const withAuth = require('../utils/auth');
 // GET all posts for homepage
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
+  if (!req.session.logged_in) {
+    res.redirect('/login');
+    return;
+  }
+
   try {
     const dbPostData = await Post.findAll({
       include: [
