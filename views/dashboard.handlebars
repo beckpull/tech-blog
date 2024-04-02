@@ -1,13 +1,13 @@
 <div class="container container-fluid mt-5">
-  {{#each posts as |post|}}
+    <p>{{userData}}</p>
+{{!-- 
   <div class="post">
-    <a href="/posts/{{post.id}}">
-    <h2>{{post.title}}</h2>
+    <a href="/posts/{{userData.post.id}}">
+    <h2>{{userData.post.title}}</h2>
   </a>
     <p>By: <span>{{post.user.username}}</span> on <span>{{format_time post.created_on}}</span></p>
     <p>{{post.contents}}</p>
-  </div>
-  {{/each}}
+  </div> --}}
 </div>
 
 
