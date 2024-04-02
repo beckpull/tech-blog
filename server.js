@@ -18,7 +18,6 @@ const sess = {
       maxAge: 60 * 60 * 4 * 1000,
       httpOnly: true,
       secure: false,
-      sameSite: 'strict'
   },
   rolling: true,
   resave: false,
