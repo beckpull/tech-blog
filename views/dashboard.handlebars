@@ -1,6 +1,8 @@
 <div class="container container-fluid mt-5">
   <h1 style="text-align: center">{{userData.username}}</h1>
   {{#each userData.posts as |post|}}
+  </br>
+  </br>
   <div class="posts">
     <a href="/api/posts/{{post.id}}">
       <h2>{{post.title}}</h2>
@@ -14,6 +16,8 @@
   <a href="/dashboard/delete/{{post.id}}" id="delete-post">delete this post</a>
   {{/each}}
   </br>
+  </br>  
   </br>
-  <a href="/dashboard/new">new post</a>
+  </br>
+  <a href="/dashboard/new">create a new post</a>
 </div>

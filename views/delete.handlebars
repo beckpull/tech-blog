@@ -10,7 +10,7 @@
     <p><strong>{{comment.user.username}}</strong> <i>said:</i> {{comment.contents}}</p>
     {{/each}}
   </div>
-  <button class="btn-primary" id="delete-btn">delete</button>
+  <button class="btn-primary" id="delete-btn" data-num="{{post.id}}">delete</button>
 </div>
 
 <script src="/js/deletePost.js"></script>

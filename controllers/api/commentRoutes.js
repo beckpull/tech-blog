@@ -4,11 +4,7 @@ const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // If a POST request is made to /api/Posts, a new Post is created. If there is an error, the function returns with a 400 error. 
-router.post('/:post_id', withAuth, async (req, res) => {
-  if (!req.session.logged_in) {
-    res.redirect('/login');
-    return;
-}
+router.post('/:id', withAuth, async (req, res) => {
   try {
     const newComment = await Comment.create({
       ...req.body,
@@ -24,10 +20,6 @@ router.post('/:post_id', withAuth, async (req, res) => {
 
 // If a DELETE request is made to /api/Posts/:id, that Post is deleted. 
 router.delete('/:id', withAuth, async (req, res) => {
-  if (!req.session.logged_in) {
-    res.redirect('/login');
-    return;
-}
   try {
     const commentData = await Comment.destroy({
       where: {
@@ -37,7 +29,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!commentData) {
-      res.status(404).json({ message: 'No Post found with this id!' });
+      res.status(404).json({ message: 'No comment found with this id!' });
       return;
     }
 

@@ -1,13 +1,25 @@
 <div class="container container-fluid mt-5">
   <div class="post">
     <a href="/api/posts/{{post.id}}">
-    <h2>{{post.title}}</h2>
-  </a>
+      <h2>{{post.title}}</h2>
+    </a>
     <p>Posted by: <span>{{post.user.username}}</span> on <span>{{format_time post.created_on}}</span></p>
     <p>{{post.contents}}</p>
     <p>Comments:</p>
     {{#each post.comments as |comment|}}
     <p><strong>{{comment.user.username}}</strong> <i>said:</i> {{comment.contents}}</p>
+    <p>posted on: {{format_time comment.created_on}}</p>
     {{/each}}
+    <div class="addcomment-card">
+      <form class="form addComment-form">
+        <div class="form-group">
+          <label for="comment-contents">Comment:</label>
+          <input class="form-input" type="text" id="comment-contents" />
+        </div>
+        <button class="btn-primary" type="submit">add comment</button>
+    </div>
+
+    </form>
   </div>
 </div>
+<script src="/js/addComment.js"></script>

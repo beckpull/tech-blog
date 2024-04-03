@@ -3,16 +3,19 @@ const router = require('express').Router();
 const { Post, Comment, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.get('/:id', withAuth, async (req, res) => {
+router.get('/:id', async (req, res) => {
     // If the user is logged in, allow them to view the Post
     try {
       const dbPostData = await Post.findByPk(req.params.id, {
         include: [
+          { model: User, attributes: ['username']},
           { model: Comment, include: [{ model: User, attributes: ['username'] }] },
         ]
       });
+
       const post = dbPostData.get({ plain: true });
-      console.log(post.comments);
+      console.log(post.comments[0].user_id);
+      console.log(req.session.user_id);
       res.render('post', { post, loggedIn: req.session.loggedIn });
       // res.json(post);
     } catch (err) {
@@ -36,7 +39,8 @@ router.post('/new', withAuth, async (req, res) => {
 });
 
 router.delete('/:id', withAuth, async (req, res) => {
-
+// console.log("delete route");
+console.log(req.params.id,"req.params.id")
   try {
     const postData = await Post.destroy({
       where: {
@@ -72,6 +76,20 @@ router.put('/:id', withAuth, async (req, res) => {
     }
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+router.post('/:id', withAuth, async (req, res) => {
+  try {
+    const newComment = await Comment.create({
+      ...req.body,
+      user_id: req.session.user_id,
+      post_id: req.params.id
+    });
+
+    res.status(200).json(newComment);
+  } catch (err) {
+    res.status(400).json(err);
   }
 });
 
