@@ -1,7 +1,32 @@
 const router = require('express').Router();
 // Import the User model from the models folder
-const { User } = require('../../models');
+const { User, Comment, Post } = require('../../models');
+const withAuth = require('../../utils/auth');
 
+
+// // GET one User
+router.get('/:id', withAuth, async (req, res) => {
+
+  // If the user is logged in, allow them to view the User
+  try {
+    const dbUserData = await User.findByPk(req.params.id, {
+      include: [
+        {
+          model: Post,
+        },
+        { model: Comment, include: [{ model: User, attributes: ['username'] }] },
+      ],
+    });
+
+    const userData = dbUserData.get({ plain: true });
+    // res.json(userData);
+    res.render('user', { userData, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+
+});
 
 // If a POST request is made to /api/users, a new user is created. The user id and logged in state is saved to the session within the request object.
 router.post('/signup', async (req, res) => {

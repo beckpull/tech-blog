@@ -1,0 +1,16 @@
+<div class="container container-fluid mt-5">
+  <div class="post">
+    <a href="/api/posts/{{post.id}}">
+    <h2>{{post.title}}</h2>
+  </a>
+    <p>Posted by: <span>{{post.user.username}}</span> on <span>{{format_time post.created_on}}</span></p>
+    <p>{{post.contents}}</p>
+    <p>Comments:</p>
+    {{#each post.comments as |comment|}}
+    <p><strong>{{comment.user.username}}</strong> <i>said:</i> {{comment.contents}}</p>
+    {{/each}}
+    {{!-- {{#if}}
+    {{}}
+    {{/if}} --}}
+  </div>
+</div>
