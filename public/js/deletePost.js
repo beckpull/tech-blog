@@ -2,7 +2,7 @@ const deletePostHandler = async (event) => {
   event.preventDefault();
 
   const id = event.target.id;
-  console.log(id);
+  console.log(`ID: ${id}`);
 
   if (id) {
     const response = await fetch(`/api/posts/${id}`, {
