@@ -95,6 +95,9 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 _This application has several dependencies, to install individually onto your machine, navigate to the directory this code lives in and type these commands into your Terminal / Git Bash:_
   ```sh
   npm i express
+  npm i express-session
+  npm i connect-session-sequelize
+  npm i express-handlebars
   npm i sequelize
   npm i pg
   npm i dotenv
@@ -123,24 +126,19 @@ _To get a local copy up and running follow these simple example steps:_
 
 <!-- USAGE EXAMPLES -->
 ## Usage 
-<!-- Link to video demo -->
- <!-- * **Click [here](https://drive.google.com/file/d/1Tv-WVJPkxhrQiLhGpHmbhtl6tIY7OvaY/view) or scan the below QR code to watch a demo video on how to use this application.**
 </br></br>
-<div align="center">
-  <a href="https://github.com/beckpull/tech-blog">
-      <img src="./assets/img/qr.png" width="200">
-  </a> 
+<div align="center"> 
   </br></br>
   <p><strong><i>The following are the example outputs for each GET request:</i></strong></p>
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
    <p>GET /products:</p>
-    <img src="./assets/img/getProducts.png" width="500">
+    <img src="#" width="500">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
     <p>GET /categories:</p>
-    <img src="./assets/img/getCategories.png" width="500">
+    <img src="#" width="500">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
@@ -149,22 +147,22 @@ _To get a local copy up and running follow these simple example steps:_
   </a>
 </br></br>
   <p><i>View demo video above for POST, PUT and DELETE request examples.</i></p>
-</div> -->
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-<img src="./assets/img/schema-roadmap.png">
-<!-- <div align="right">
+<img src="./public/img/schema-roadmap.png">
+<div align="right">
   <p><i>This was how I chose to set up my schema for this project</i></p>
 </div>
 </br></br></br>
-<img src="./assets/img/js-roadmap.png">
+<img src="./public/img/roadmap.png">
 <div align="right">
   <p><i>This was my roadmap to completing all of the acceptance criteria</i></p>
-</div> -->
+</div>
 <!-- GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
 THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
@@ -241,12 +239,12 @@ See the [open issues](https://github.com/beckpull/tech-blog/issues) for a full l
 ## Acknowledgments
 
 * This README file template was created by [@othneildrew](https://github.com/othneildrew) - the original can be found [here](https://github.com/othneildrew/Best-README-Template)
-* Huge thank you to my tutor, [Dennis Itua](https://github.com/Dennis-The14th-web) and to my friend [@NathaliaReyes](https://github.com/nathaliareyes) for all of your help and support through this and every project ✨
+* Huge thank you to my friend [@NathaliaReyes](https://github.com/nathaliareyes) for all of your help, support, and collaboration through this project ✨
 
 #### Disclaimer: 
 > I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs **as references** for the javascript code attached. 
 >
-**All of the utilized information has been altered in order to fit this project. This repository contains some modified Denver University start code and _solely_ my own work on the backend.** 
+**All of the utilized information has been altered in order to fit this project. This repository contains _solely_ my own work.** 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
