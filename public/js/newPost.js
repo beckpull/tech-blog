@@ -1,4 +1,4 @@
-const postFormHandler = async (event) => {
+const newPostFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector("#post-title").value.trim();
@@ -23,4 +23,4 @@ const postFormHandler = async (event) => {
 
 document
   .querySelector(".post-form")
-  .addEventListener("submit", postFormHandler);
+  .addEventListener("submit", newPostFormHandler);

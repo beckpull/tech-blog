@@ -1,5 +1,5 @@
 <div class="container container-fluid mt-5">
-  <div class="post">
+  <div class="delete-post">
     <a href="/api/posts/{{post.id}}">
     <h2>{{post.title}}</h2>
   </a>
@@ -10,4 +10,7 @@
     <p><strong>{{comment.user.username}}</strong> <i>said:</i> {{comment.contents}}</p>
     {{/each}}
   </div>
+  <button class="btn-primary" id="delete-btn">delete</button>
 </div>
+
+<script src="/js/deletePost.js"></script>

@@ -21,10 +21,6 @@ router.get('/:id', withAuth, async (req, res) => {
     }
 });
 
-router.get('/new', withAuth, async (req, res) => {
-      res.render('new', { loggedIn: req.session.loggedIn });
-});
-
 // If a POST request is made to /api/Posts, a new Post is created. If there is an error, the function returns with a 400 error. 
 router.post('/new', withAuth, async (req, res) => {
 
@@ -34,13 +30,11 @@ router.post('/new', withAuth, async (req, res) => {
       user_id: req.session.user_id,
     });
     res.status(200).json(newPost);
-    // document.location.redirect('/dashboard');
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-// If a DELETE request is made to /api/Posts/:id, that Post is deleted. 
 router.delete('/:id', withAuth, async (req, res) => {
 
   try {
@@ -52,14 +46,35 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!postData) {
-      res.status(404).json({ message: 'No Post found with this id!' });
+      res.status(404).end();
       return;
     }
 
-    res.status(200).json(postData);
+    res.status(200).end();
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.put('/:id', withAuth, async (req, res) => {
+  try {
+    const [rows] = await Post.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (rows > 0) {
+      res.status(200).end();
+    } else {
+      res.status(404).end();
+    }
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;
 
 module.exports = router;

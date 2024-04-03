@@ -1,11 +1,8 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
-
 const withAuth = require('../utils/auth');
+
 // GET all posts for homepage
-
-// router.get('/', withAuth, async (req, res) => {
-
 router.get('/', async (req, res) => {
 
   try {
@@ -33,12 +30,13 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/dashboard', withAuth, async (req, res) => {
+
+// // GET one User
+router.get('/user/:id', withAuth, async (req, res) => {
+
+  // If the user is logged in, allow them to view the User
   try {
-    const dbUserData = await User.findByPk(req.session.user_id, {
-      attributes: {
-        exclude: ['password'],
-      },
+    const dbUserData = await User.findByPk(req.params.id, {
       include: [
         {
           model: Post,
@@ -47,19 +45,15 @@ router.get('/dashboard', withAuth, async (req, res) => {
       ],
     });
 
-    const userData = dbUserData.get({ plain: true })
-
-    console.log(userData);
-    res.render('dashboard', {
-      userData,
-      loggedIn: req.session.loggedIn,
-    });
+    const userData = dbUserData.get({ plain: true });
+    // res.json(userData);
+    res.render('user', { userData, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
-});
 
+});
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
