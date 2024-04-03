@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-const sequelize = process.env.DB_HOSTL
+const sequelize = process.env.DB_HOST
   ? new Sequelize(process.env.DB_HOST)
   : new Sequelize(
     process.env.DB_NAME,
