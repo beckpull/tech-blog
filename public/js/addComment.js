@@ -2,10 +2,11 @@ const newPostFormHandler = async (event) => {
     event.preventDefault();
     const postId = window.location.pathname.split('/').pop(); 
     const contents = document.querySelector("#comment-contents").value.trim();
+    console.log(postId);
     console.log(contents);
     if (contents) {
  
-      const response = await fetch(`/api/posts/${postId}`, {
+      const response = await fetch(`/api/comments/${postId}`, {
         method: "POST",
         body: JSON.stringify({ contents }),
         headers: { "Content-Type": "application/json" },

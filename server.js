@@ -19,6 +19,7 @@ const sess = {
       secure: false,
   },
   rolling: true,
+  sameSite: 'none',
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
