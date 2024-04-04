@@ -142,8 +142,8 @@ _To get a local copy up and running follow these simple example steps:_
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
    <p>Log in/Sign up</p>
-    <img src="./public/img/login.png" width="480">
-    <img src="./public/img/signup.png" width="400">
+    <img src="./public/img/login.png" width="444">
+    <img src="./public/img/signup.png" width="370">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
