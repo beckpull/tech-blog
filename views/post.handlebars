@@ -13,13 +13,16 @@
     <div class="addcomment-card">
       <form action="/api/comments/{{post.id}}" method="post" class="form addComment-form">
         <div class="form-group">
+          {{#if loggedIn}}
           <label for="comment-contents">Comment:</label>
           <input class="form-input" type="text" id="comment-contents" />
         </div>
         <button class="btn-primary" type="submit">add comment</button>
+        {{/if}}
     </div>
 
     </form>
   </div>
 </div>
+</main>
 <script src="/js/addComment.js"></script>

@@ -1,53 +1,52 @@
 [
     {
-        "username": "ekitto0",
-        "email": "kmccrie0@eventbrite.com",
-        "password": "xU9(BMD40I0."
+        "username": "JohnDoe",
+        "email": "john.doe@example.com",
+        "password": "Password123"
     },
     {
-        "username": "cledgley1",
-        "email": "caldcorne1@bing.com",
-        "password": "dA3)>q%9rQ)"
+        "username": "JaneSmith",
+        "email": "jane.smith@example.com",
+        "password": "Smith@2023"
     },
     {
-        "username": "btommis2",
-        "email": "graddan2@psu.edu",
-        "password": "vN1!CDFl$e"
+        "username": "MikeJohnson",
+        "email": "mike.johnson@example.com",
+        "password": "JohnsonPass456"
     },
     {
-        "username": "ecadwell3",
-        "email": "cpikett3@photobucket.com",
-        "password": "wW2|v|l?$X)}Km"
+        "username": "EmilyBrown",
+        "email": "emily.brown@example.com",
+        "password": "Brownie#789"
     },
     {
-        "username": "kbirdfield4",
-        "email": "aconstantinou4@nasa.gov",
-        "password": "vH3}Z`e/yQ"
+        "username": "DavidWilson",
+        "email": "david.wilson@example.com",
+        "password": "Wilson1234!"
     },
     {
-        "username": "bpinchback5",
-        "email": "brikard5@wsj.com",
-        "password": "eZ6<z7UT"
+        "username": "SarahTaylor",
+        "email": "sarah.taylor@example.com",
+        "password": "TaylorPass!"
     },
     {
-        "username": "nsotham6",
-        "email": "nelverstone6@yellowpages.com",
-        "password": "kY5,>a5tgndZZu"
+        "username": "ChrisMiller",
+        "email": "chris.miller@example.com",
+        "password": "Miller@2023"
     },
     {
-        "username": "msamuels7",
-        "email": "olindstrom7@umich.edu",
-        "password": "wR7!x+N<&"
+        "username": "JessicaDavis",
+        "email": "jessica.davis@example.com",
+        "password": "DavisPass123"
     },
     {
-        "username": "dwhelpdale8",
-        "email": "rconklin8@salon.com",
-        "password": "jQ6`LkGd%"
+        "username": "AndrewClark",
+        "email": "andrew.clark@example.com",
+        "password": "Clarky#456"
     },
     {
-        "username": "lorbon9",
-        "email": "ldeek9@github.com",
-        "password": "pJ3\"j@QDDRy\\M"
+        "username": "ElizabethWhite",
+        "email": "elizabeth.white@example.com",
+        "password": "WhitePass789!"
     }
 ]
-

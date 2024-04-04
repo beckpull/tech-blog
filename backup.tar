@@ -177,8 +177,7 @@ ALTER TABLE ONLY public."user" ALTER COLUMN id SET DEFAULT nextval('public.user_
 --
 
 COPY public."Sessions" (sid, expires, data, "createdAt", "updatedAt") FROM stdin;
-dAGif0rE-3f4oCHAIWyCeo9q-Tb3ChQa	2024-04-03 19:43:28.66-06	{"cookie":{"originalMaxAge":14400000,"expires":"2024-04-04T01:43:13.497Z","secure":false,"httpOnly":true,"path":"/"},"user_id":2,"loggedIn":true}	2024-04-03 15:43:08.744-06	2024-04-03 15:43:28.66-06
-Fi9e2VFUjuO0ul0FkpjwjCtWi6gD1dbg	2024-04-03 19:18:40.659-06	{"cookie":{"originalMaxAge":14400000,"expires":"2024-04-04T01:06:21.215Z","secure":false,"httpOnly":true,"path":"/"},"user_id":11,"loggedIn":true}	2024-04-03 15:05:30.99-06	2024-04-03 15:18:40.66-06
+7nZGSWTj3oUZVuaWZQ_Eim5o8Vzak3M2	2024-04-04 02:15:52.199-06	{"cookie":{"originalMaxAge":14400000,"expires":"2024-04-04T08:15:52.182Z","secure":false,"httpOnly":true,"path":"/"}}	2024-04-03 22:15:52.186-06	2024-04-03 22:15:52.199-06
 \.
 
 
@@ -187,17 +186,16 @@ Fi9e2VFUjuO0ul0FkpjwjCtWi6gD1dbg	2024-04-03 19:18:40.659-06	{"cookie":{"original
 --
 
 COPY public.comment (id, contents, user_id, post_id, created_on, created_at, updated_at) FROM stdin;
-1	pretium iaculis justo in	5	3	2024-04-03 14:09:15.186-06	2024-04-03 14:09:15.186-06	2024-04-03 14:09:15.186-06
-2	eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis	9	1	2024-04-03 14:09:15.189-06	2024-04-03 14:09:15.189-06	2024-04-03 14:09:15.189-06
-3	mattis egestas metus aenean fermentum donec ut mauris eget	1	10	2024-04-03 14:09:15.19-06	2024-04-03 14:09:15.19-06	2024-04-03 14:09:15.19-06
-4	quam nec dui luctus rutrum nulla	3	8	2024-04-03 14:09:15.191-06	2024-04-03 14:09:15.191-06	2024-04-03 14:09:15.191-06
-5	platea dictumst etiam faucibus cursus urna ut tellus nulla	1	3	2024-04-03 14:09:15.192-06	2024-04-03 14:09:15.192-06	2024-04-03 14:09:15.192-06
-6	pede morbi porttitor lorem id ligula	9	2	2024-04-03 14:09:15.193-06	2024-04-03 14:09:15.193-06	2024-04-03 14:09:15.193-06
-7	in est risus auctor sed tristique in tempus sit amet sem	6	7	2024-04-03 14:09:15.194-06	2024-04-03 14:09:15.194-06	2024-04-03 14:09:15.194-06
-8	etiam vel augue vestibulum	9	5	2024-04-03 14:09:15.195-06	2024-04-03 14:09:15.195-06	2024-04-03 14:09:15.195-06
-9	ultrices uere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus	1	4	2024-04-03 14:09:15.196-06	2024-04-03 14:09:15.196-06	2024-04-03 14:09:15.196-06
-10	in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla	7	6	2024-04-03 14:09:15.197-06	2024-04-03 14:09:15.197-06	2024-04-03 14:09:15.197-06
-11	test comment	11	11	2024-04-03 15:16:44.044-06	2024-04-03 15:16:44.045-06	2024-04-03 15:16:44.045-06
+1	Great post! Really enjoyed reading it.	7	3	2024-04-03 22:15:35.098-06	2024-04-03 22:15:35.098-06	2024-04-03 22:15:35.098-06
+2	This is such an informative article. Thanks for sharing!	5	1	2024-04-03 22:15:35.1-06	2024-04-03 22:15:35.1-06	2024-04-03 22:15:35.1-06
+3	I found this very helpful. Keep up the good work!	7	10	2024-04-03 22:15:35.101-06	2024-04-03 22:15:35.101-06	2024-04-03 22:15:35.101-06
+4	Interesting perspective. I never thought about it that way.	1	8	2024-04-03 22:15:35.102-06	2024-04-03 22:15:35.102-06	2024-04-03 22:15:35.102-06
+5	I have a similar experience. Thanks for sharing yours.	1	3	2024-04-03 22:15:35.102-06	2024-04-03 22:15:35.102-06	2024-04-03 22:15:35.102-06
+6	I completely agree with your points. Well said!	3	2	2024-04-03 22:15:35.103-06	2024-04-03 22:15:35.103-06	2024-04-03 22:15:35.103-06
+7	Looking forward to reading more from you. Keep it up!	9	7	2024-04-03 22:15:35.104-06	2024-04-03 22:15:35.104-06	2024-04-03 22:15:35.104-06
+8	This topic is so relevant. Thanks for addressing it.	1	5	2024-04-03 22:15:35.105-06	2024-04-03 22:15:35.105-06	2024-04-03 22:15:35.105-06
+9	I learned something new today. Thanks for the insight!	3	4	2024-04-03 22:15:35.106-06	2024-04-03 22:15:35.106-06	2024-04-03 22:15:35.106-06
+10	I appreciate the effort you put into this. Well done!	5	6	2024-04-03 22:15:35.107-06	2024-04-03 22:15:35.107-06	2024-04-03 22:15:35.107-06
 \.
 
 
@@ -206,17 +204,16 @@ COPY public.comment (id, contents, user_id, post_id, created_on, created_at, upd
 --
 
 COPY public.post (id, title, contents, created_on, user_id, created_at, updated_at) FROM stdin;
-1	primis in faucibus	platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi	2024-04-03 14:09:15.174-06	8	2024-04-03 14:09:15.175-06	2024-04-03 14:09:15.175-06
-2	venenatis turpis	sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac	2024-04-03 14:09:15.178-06	1	2024-04-03 14:09:15.178-06	2024-04-03 14:09:15.178-06
-3	eget eros elementum pellentesque	nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse	2024-04-03 14:09:15.179-06	7	2024-04-03 14:09:15.179-06	2024-04-03 14:09:15.179-06
-4	turpis nec	a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede	2024-04-03 14:09:15.18-06	5	2024-04-03 14:09:15.18-06	2024-04-03 14:09:15.18-06
-5	semper est quam pharetra	at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere	2024-04-03 14:09:15.181-06	8	2024-04-03 14:09:15.181-06	2024-04-03 14:09:15.181-06
-6	nisl duis	a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices	2024-04-03 14:09:15.182-06	5	2024-04-03 14:09:15.182-06	2024-04-03 14:09:15.182-06
-7	pellentesque volutpat	at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt	2024-04-03 14:09:15.183-06	2	2024-04-03 14:09:15.183-06	2024-04-03 14:09:15.183-06
-8	sed sagittis nam congue	nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices	2024-04-03 14:09:15.183-06	6	2024-04-03 14:09:15.183-06	2024-04-03 14:09:15.183-06
-9	tortor sollicitudin	sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean	2024-04-03 14:09:15.184-06	1	2024-04-03 14:09:15.184-06	2024-04-03 14:09:15.184-06
-10	justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum	pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien	2024-04-03 14:09:15.185-06	6	2024-04-03 14:09:15.185-06	2024-04-03 14:09:15.185-06
-11	NEW Test Post Title	NEW Test Post Body	2024-04-03 15:06:51.919-06	11	2024-04-03 15:06:51.92-06	2024-04-03 15:17:18.005-06
+1	The Evolution of Artificial Intelligence	Artificial intelligence (AI) has rapidly evolved over the years, from simple rule-based systems to advanced machine learning algorithms.	2024-04-03 22:15:35.087-06	9	2024-04-03 22:15:35.087-06	2024-04-03 22:15:35.087-06
+2	Introduction to Blockchain Technology	Blockchain technology, initially known as the backbone of cryptocurrencies, has emerged as a revolutionary solution for secure and transparent transactions.	2024-04-03 22:15:35.091-06	5	2024-04-03 22:15:35.091-06	2024-04-03 22:15:35.091-06
+3	Understanding Quantum Computing	Quantum computing is poised to revolutionize the field of computing by leveraging the principles of quantum mechanics to perform complex calculations exponentially faster than classical computers.	2024-04-03 22:15:35.092-06	5	2024-04-03 22:15:35.092-06	2024-04-03 22:15:35.092-06
+4	The Rise of Cybersecurity Threats	As technology advances, so do cybersecurity threats. Organizations worldwide are facing increasingly sophisticated cyber attacks, highlighting the importance of robust security measures.	2024-04-03 22:15:35.093-06	5	2024-04-03 22:15:35.093-06	2024-04-03 22:15:35.093-06
+5	The Impact of Big Data Analytics	Big data analytics has transformed industries by enabling organizations to derive valuable insights from vast amounts of data, driving informed decision-making and competitive advantage.	2024-04-03 22:15:35.094-06	9	2024-04-03 22:15:35.094-06	2024-04-03 22:15:35.094-06
+6	Exploring the Internet of Things (IoT)	The Internet of Things (IoT) has connected billions of devices worldwide, revolutionizing industries such as healthcare, manufacturing, and transportation with its ability to collect and exchange data.	2024-04-03 22:15:35.094-06	6	2024-04-03 22:15:35.094-06	2024-04-03 22:15:35.094-06
+7	Advancements in Augmented Reality (AR)	Augmented reality (AR) technology has evolved rapidly, offering immersive experiences that blend digital content with the real world, opening up new possibilities in gaming, education, and enterprise.	2024-04-03 22:15:35.095-06	5	2024-04-03 22:15:35.095-06	2024-04-03 22:15:35.095-06
+8	The Future of Robotics	Robotics is advancing at a rapid pace, with robots increasingly performing tasks once reserved for humans. From industrial automation to autonomous vehicles, robotics is reshaping various industries.	2024-04-03 22:15:35.096-06	4	2024-04-03 22:15:35.096-06	2024-04-03 22:15:35.096-06
+9	The Promise of 5G Technology	5G technology promises ultra-fast speeds, low latency, and massive connectivity, paving the way for transformative applications such as autonomous vehicles, remote surgery, and smart cities.	2024-04-03 22:15:35.097-06	2	2024-04-03 22:15:35.097-06	2024-04-03 22:15:35.097-06
+10	The Ethical Implications of AI and Automation	As AI and automation continue to advance, ethical considerations become paramount. From job displacement to biased algorithms, society must address these challenges to ensure responsible deployment.	2024-04-03 22:15:35.097-06	2	2024-04-03 22:15:35.097-06	2024-04-03 22:15:35.097-06
 \.
 
 
@@ -225,17 +222,16 @@ COPY public.post (id, title, contents, created_on, user_id, created_at, updated_
 --
 
 COPY public."user" (id, username, email, password, created_at, updated_at) FROM stdin;
-1	btommis2	graddan2@psu.edu	$2b$10$2S2AhW2BS7FrDAFVWNMQfOrjsy2ujP.Q3nfXAYcNvLngMH./WpRtm	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-2	ekitto0	kmccrie0@eventbrite.com	$2b$10$JYfoKc5zsUn.aAhaSbMWXuTjy9UFznX8tzSi.BuNMG2TVEsJIX5aq	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-3	ecadwell3	cpikett3@photobucket.com	$2b$10$IPmxNWXUGqkZPdPG8ZF1H.THgBJAyrzrM7LxeDml.TtN4jXhOCobe	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-4	cledgley1	caldcorne1@bing.com	$2b$10$KMP0oowJ6C7JrYYuGcF/8.f2wAB1dq7tP/cAo0M/8ikMfQwfUYOQC	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-5	kbirdfield4	aconstantinou4@nasa.gov	$2b$10$7plB.YJc2VkroxRoMu0eW.irXsaWRumK8cj7Zs/FMMX5CQp.Spajq	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-6	bpinchback5	brikard5@wsj.com	$2b$10$.LA87f/YpRFzIe2HVMI5UOGbKPT8OxX36XrnFagbu2ne9QwwFc/J.	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-7	msamuels7	olindstrom7@umich.edu	$2b$10$YyU92iuES8yefKjEupTUw.iErnujP2l.liCr3zvYRhVaf0yM.hki.	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-8	nsotham6	nelverstone6@yellowpages.com	$2b$10$/kC2LzsKJa84pGVQkmboE.MEDQqZaPa2v.1sMiR.FaldomIRln7bG	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-9	dwhelpdale8	rconklin8@salon.com	$2b$10$X/DSpK.FIfd7bpv0X.XBeOrjuMsjf5Uz8paTql8ZF1KOyVaWHZyHq	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-10	lorbon9	ldeek9@github.com	$2b$10$kwEji6HXM8FvaA5UIukNUOSN4fRrtmha7AgWJnQjmAv.QmxEdsJlu	2024-04-03 14:09:14.998-06	2024-04-03 14:09:14.998-06
-11	tester	tester@email.com	$2b$10$ZcysWJy3gPr.9DzQqjOutOdLwIZzI3Wsu72HbGf7cRPGMvRgoGSyu	2024-04-03 15:06:21.111-06	2024-04-03 15:06:21.111-06
+1	JohnDoe	john.doe@example.com	$2b$10$fcyHL80FLytbNEdfabH8meTslMqYzT56b46a5gn9IGlX35xzpMaDm	2024-04-03 22:15:34.911-06	2024-04-03 22:15:34.911-06
+2	DavidWilson	david.wilson@example.com	$2b$10$VfKphteUpfVn6Xa4YeCQSuMWBQuQpRrHBF7Dxx6Rw2EsePzLdLky6	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+3	MikeJohnson	mike.johnson@example.com	$2b$10$cRMmeA1WaRAB6eKBIV/vB.OVcxCO.Q.Q6YKJydygqWudPd99hmMzq	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+4	SarahTaylor	sarah.taylor@example.com	$2b$10$O0hHXnvX38/4brlm.Yoyrey82F1OehBjHpzTVjjggkyr04yT/vcCu	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+5	EmilyBrown	emily.brown@example.com	$2b$10$QaKnu8LbwBHznXJ9QsXcie/VRIXXnKRb4I/IBceCeUql.5Pru9tge	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+6	JessicaDavis	jessica.davis@example.com	$2b$10$inXE8RLN7AQNvmQY96a.7.57WJEKPwd0ePKnHJWSBxvqfXTqV2MLK	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+7	ChrisMiller	chris.miller@example.com	$2b$10$LfcJagPChRRx89n8Fe/G3u6S2/5IyXqUNw3MzBWpmYZ5bpinrfOGK	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+8	JaneSmith	jane.smith@example.com	$2b$10$IroUYDwzqBuEzb1AGdfIHeN9cXyPGEVboYcbuE5sIhffppnJvp.xa	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+9	AndrewClark	andrew.clark@example.com	$2b$10$duYK02KO/OMHLIoOHz.jEulhuCwh82SST5Wrt25cunoTaSqcWSxLm	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
+10	ElizabethWhite	elizabeth.white@example.com	$2b$10$IFM2KPNCvP9fFGgVlrekVeIbZENv7GZIXbn06v3usXD4jfKQp4kmS	2024-04-03 22:15:34.912-06	2024-04-03 22:15:34.912-06
 \.
 
 
@@ -243,21 +239,21 @@ COPY public."user" (id, username, email, password, created_at, updated_at) FROM 
 -- Name: comment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: guest
 --
 
-SELECT pg_catalog.setval('public.comment_id_seq', 11, true);
+SELECT pg_catalog.setval('public.comment_id_seq', 10, true);
 
 
 --
 -- Name: post_id_seq; Type: SEQUENCE SET; Schema: public; Owner: guest
 --
 
-SELECT pg_catalog.setval('public.post_id_seq', 11, true);
+SELECT pg_catalog.setval('public.post_id_seq', 10, true);
 
 
 --
 -- Name: user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: guest
 --
 
-SELECT pg_catalog.setval('public.user_id_seq', 11, true);
+SELECT pg_catalog.setval('public.user_id_seq', 10, true);
 
 
 --
