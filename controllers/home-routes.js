@@ -6,7 +6,7 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
 
   const loggedIn = req.session.loggedIn;
-  console.log(`first: ${loggedIn}`);
+  // console.log(`first: ${loggedIn}`);
 
   try {
     const dbPostData = await Post.findAll({
@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
     const posts = dbPostData.map((Post) =>
       Post.get({ plain: true })
     );
-    console.log(`second: ${loggedIn}`);
+    // console.log(`second: ${loggedIn}`);
     res.render('homepage', { posts, loggedIn : loggedIn });
 
   } catch (err) {
