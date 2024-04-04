@@ -7,7 +7,7 @@
     </a>
     <p>Posted by: <span><a href="/user/{{post.user.id}}">{{post.user.username}}</a></span> on <span>{{format_time
         post.created_on}}</span></p>
-    {{#if loggedIn}}
+    {{#if ../loggedIn}}
     <p>{{post.contents}}</p>
     {{/if}}
     </br>

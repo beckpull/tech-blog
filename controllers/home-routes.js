@@ -5,6 +5,9 @@ const withAuth = require('../utils/auth');
 // GET all posts for homepage
 router.get('/', async (req, res) => {
 
+  const loggedIn = req.session.loggedIn;
+  console.log(`first: ${loggedIn}`);
+
   try {
     const dbPostData = await Post.findAll({
       include: [
@@ -18,12 +21,8 @@ router.get('/', async (req, res) => {
     const posts = dbPostData.map((Post) =>
       Post.get({ plain: true })
     );
-
-    // console.log(req.session.loggedIn);
-    // const loggedIn = req.session.loggedIn;
-    // console.log(loggedIn);
-
-    res.render('homepage', { posts, loggedIn: req.session.loggedIn });
+    console.log(`second: ${loggedIn}`);
+    res.render('homepage', { posts, loggedIn : loggedIn });
 
   } catch (err) {
     console.log(err);
