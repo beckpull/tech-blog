@@ -14,7 +14,7 @@
 
 
 
-<h1 align="center">Tech Blog</h1>
+<h1 align="center">TechBlog</h1>
 
   <p align="center">
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well
@@ -22,7 +22,7 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
     <a href="https://github.com/beckpull/tech-blog"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://tech-blog-ravs.onrender.com">View Page</a>
     ·
     <a href="https://github.com/beckpull/tech-blog/issues">Report Bug</a>
     ·
@@ -65,9 +65,15 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- - This application is geared towards anybody looking for an easy-to-use database integration for their existing e-commerce website.
+**TechBlog** is a content management system (CMS) inspired by popular blogging platforms like WordPress, designed specifically for tech enthusiasts. With TechBlog, users can create an account, publish posts on various tech topics, engage in discussions through comments, and explore a vibrant community of like-minded individuals.
 
-- The goal of this application is for companies to be able to easily keep track of and manage inventories and correlating items within their website.  -->
+**Key Features:**
+
+- **User Authentication**: Secure user authentication system allowing users to create accounts and log in securely.
+- **Create and Publish Posts**: Users can easily create, edit, and publish posts on a wide range of tech-related topics.
+- **Commenting System**: Engage in discussions by commenting on posts, fostering a dynamic community atmosphere.
+- **Responsive Design**: Fully responsive design ensures seamless user experience across devices, from desktops to mobile devices.
+- **Interactive Dashboard** : Intuitive dashboard for users to manage/update/delete their posts effortlessly. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,11 +121,11 @@ _To get a local copy up and running follow these simple example steps:_
    ```
 2. Install all necessary NPM packages
    ```sh
-   npm i
+   npm i && npm run seed
    ```
 3. Node `server.js`
    ```js
-   node server.js
+   npm start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,23 +133,27 @@ _To get a local copy up and running follow these simple example steps:_
 <!-- USAGE EXAMPLES -->
 ## Usage 
 </br></br>
+
 <div align="center"> 
+<strong><i>Click <a href="https://tech-blog-ravs.onrender.com">HERE</a> to view this site in action!</strong>
   </br></br>
-  <p><strong><i>The following are the example outputs for each GET request:</i></strong></p>
+  <p><strong><i>This is what users see upon entering the site:</i></strong></p>
+      <img src="./public/img/homepage.png" width="800">
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
-   <p>GET /products:</p>
-    <img src="#" width="500">
+   <p>Log in/Sign up</p>
+    <img src="./public/img/login.png" width="480">
+    <img src="./public/img/signup.png" width="400">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
-    <p>GET /categories:</p>
-    <img src="#" width="500">
+    <p>User Dashboard</p>
+    <img src="./public/img/dashboard.png" width="800">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
-    <p>GET /tags:</p>
-    <img src="#" width="500">
+    <p>Clicking into a post</p>
+    <img src="./public/img/post.png" width="800">
   </a>
 </br></br>
 </div>
@@ -158,7 +168,9 @@ _To get a local copy up and running follow these simple example steps:_
   <p><i>This was how I chose to set up my schema for this project</i></p>
 </div>
 </br></br></br>
-<img src="./public/img/roadmap.png">
+<div align="center">
+  <img src="./public/img/roadmap.png" height="1000">
+</div>
 <div align="right">
   <p><i>This was my roadmap to completing all of the acceptance criteria</i></p>
 </div>
@@ -241,7 +253,7 @@ See the [open issues](https://github.com/beckpull/tech-blog/issues) for a full l
 * Huge thank you to my friend [@NathaliaReyes](https://github.com/nathaliareyes) for all of your help, support, and collaboration through this project ✨
 
 #### Disclaimer: 
-> I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs **as references** for the javascript code attached. 
+> I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs, as well as classwork example code from the University of Denver **as references** for the javascript code attached. 
 >
 **All of the utilized information has been altered in order to fit this project. This repository contains _solely_ my own work.** 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
