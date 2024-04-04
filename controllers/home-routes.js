@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
       Post.get({ plain: true })
     );
 
-    console.log(req.session.loggedIn);
+    // console.log(req.session.loggedIn);
     // const loggedIn = req.session.loggedIn;
     // console.log(loggedIn);
 
