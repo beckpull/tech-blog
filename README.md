@@ -137,7 +137,7 @@ _To get a local copy up and running follow these simple example steps:_
 <div align="center"> 
 <strong><i>Click <a href="https://tech-blog-ravs.onrender.com">HERE</a> to view this site in action!</strong>
   </br></br>
-  <p><strong><i>This is what users see upon entering the site:</i></strong></p>
+  <p><strong></i>This is what users see upon entering the site:</i></strong></p>
       <img src="./public/img/homepage.png" width="800">
   </br></br>
   <a href="https://github.com/beckpull/tech-blog">
