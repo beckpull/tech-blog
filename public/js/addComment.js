@@ -1,4 +1,4 @@
-const newPostFormHandler = async (event) => {
+const newCommentFormHandler = async (event) => {
     event.preventDefault();
     const postId = window.location.pathname.split('/').pop(); 
     const contents = document.querySelector("#comment-contents").value.trim();
@@ -21,4 +21,4 @@ const newPostFormHandler = async (event) => {
 
 document
   .querySelector(".addcomment-card")
-  .addEventListener("submit", newPostFormHandler);
+  .addEventListener("submit", newCommentFormHandler);
