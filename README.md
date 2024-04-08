@@ -253,7 +253,7 @@ See the [open issues](https://github.com/beckpull/tech-blog/issues) for a full l
 * Huge thank you to my friend [@NathaliaReyes](https://github.com/nathaliareyes) for all of your help, support, and collaboration through this project ✨
 
 #### Disclaimer: 
-> I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs, as well as classwork example code from the University of Denver **as references** for the javascript code attached. 
+> I utilized several articles from sources such as (but not limited to) Stack Overflow, W3Schools, and MDN Web Docs, as well as many classwork example code from the University of Denver (relied heavily on DU materials for => userRoutes.js, login/signup.js/.handlebars, postFormHandlers, etc. ) **as references** for the javascript code attached. 
 >
 **All of the utilized information has been altered in order to fit this project. This repository contains _solely_ my own work.** 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
